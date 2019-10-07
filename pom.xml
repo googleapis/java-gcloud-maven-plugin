@@ -1,22 +1,41 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
   <modelVersion>4.0.0</modelVersion>
+  <groupId>com.google.cloud</groupId>
+  <artifactId>google-cloud-gcloud-maven-plugin</artifactId>
+  <version>0.0.1-SNAPSHOT</version><!-- {x-version-update:google-cloud-gcloud-maven-plugin:current} -->
+  <name>google-cloud-gcloud-maven-plugin</name>
+  <description>Experimental Maven plugin to interact with the Google Cloud SDK (https://cloud.google.com/sdk/)</description>
+  <packaging>maven-plugin</packaging>
 
   <parent>
-    <artifactId>google-cloud-testing</artifactId>
     <groupId>com.google.cloud</groupId>
-    <version>0.114.1-alpha-SNAPSHOT</version><!-- {x-version-update:google-cloud-testing:current} -->
+    <artifactId>google-cloud-shared-config</artifactId>
+    <version>0.2.0</version>
   </parent>
 
-  <artifactId>google-cloud-gcloud-maven-plugin</artifactId>
-  <version>0.114.1-alpha-SNAPSHOT</version><!-- {x-version-update:google-cloud-gcloud-maven-plugin:current} -->
-  <packaging>maven-plugin</packaging>
-  <description>Experimental Maven plugin to interact with the Google Cloud SDK
-    (https://cloud.google.com/sdk/). Currently this plugin is meant to be an internal implementation
-    detail for google-cloud-java.
-  </description>
+  <scm>
+    <connection>scm:git:git@github.com:googleapis/java-gcloud-maven-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:googleapis/java-gcloud-maven-plugin.git</developerConnection>
+    <url>https://github.com/googleapis/java-gcloud-maven-plugin</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>igorbernstein2</id>
+      <name>Igor Bernstein</name>
+      <email>igorbernstein@google.com</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <organization>
+    <name>Google LLC</name>
+  </organization>
 
   <properties>
     <maven.version>3.6.1</maven.version>
@@ -81,13 +100,6 @@
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
       <version>2.6</version>
-    </dependency>
-
-    <!-- Test deps -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>
