@@ -1,25 +1,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
   <modelVersion>4.0.0</modelVersion>
+  <groupId>com.google.cloud</groupId>
+  <artifactId>google-cloud-gcloud-maven-plugin</artifactId>
+  <version>0.0.1-alpha-SNAPSHOT</version><!-- {x-version-update:google-cloud-gcloud-maven-plugin:current} -->
+  <name>google-cloud-gcloud-maven-plugin</name>
+  <description>Experimental Maven plugin to interact with the Google Cloud SDK (https://cloud.google.com/sdk/)</description>
+  <packaging>maven-plugin</packaging>
 
   <parent>
-    <artifactId>google-cloud-testing</artifactId>
     <groupId>com.google.cloud</groupId>
-    <version>0.114.1-alpha-SNAPSHOT</version><!-- {x-version-update:google-cloud-testing:current} -->
+    <artifactId>google-cloud-shared-config</artifactId>
+    <version>0.2.0</version>
   </parent>
-
-  <artifactId>google-cloud-gcloud-maven-plugin</artifactId>
-  <version>0.114.1-alpha-SNAPSHOT</version><!-- {x-version-update:google-cloud-gcloud-maven-plugin:current} -->
-  <packaging>maven-plugin</packaging>
-  <description>Experimental Maven plugin to interact with the Google Cloud SDK
-    (https://cloud.google.com/sdk/). Currently this plugin is meant to be an internal implementation
-    detail for google-cloud-java.
-  </description>
 
   <properties>
     <maven.version>3.6.1</maven.version>
+    <junit.version>4.12</junit.version>
   </properties>
 
   <build>
@@ -42,6 +40,17 @@
       </plugin>
     </plugins>
   </build>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <dependencies>
     <!-- Maven plugin deps -->

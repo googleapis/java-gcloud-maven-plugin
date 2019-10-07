@@ -1,0 +1,8 @@
+{
+  "name": "gcloud-maven-plugin",
+  "name_pretty": "Maven Plugin wrapper for gcloud SDK",
+  "release_level": "alpha",
+  "language": "java",
+  "repo": "googleapis/java-gcloud-maven-plugin",
+  "repo_short": "java-gcloud-maven-plugin"
+}
