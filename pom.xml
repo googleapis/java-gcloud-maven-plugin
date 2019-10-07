@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-gcloud-maven-plugin</artifactId>
-  <version>0.0.1-alpha-SNAPSHOT</version><!-- {x-version-update:google-cloud-gcloud-maven-plugin:current} -->
+  <version>0.0.1-SNAPSHOT</version><!-- {x-version-update:google-cloud-gcloud-maven-plugin:current} -->
   <name>google-cloud-gcloud-maven-plugin</name>
   <description>Experimental Maven plugin to interact with the Google Cloud SDK (https://cloud.google.com/sdk/)</description>
   <packaging>maven-plugin</packaging>
@@ -14,6 +14,28 @@
     <artifactId>google-cloud-shared-config</artifactId>
     <version>0.2.0</version>
   </parent>
+
+  <scm>
+    <connection>scm:git:git@github.com:googleapis/java-gcloud-maven-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:googleapis/java-gcloud-maven-plugin.git</developerConnection>
+    <url>https://github.com/googleapis/java-gcloud-maven-plugin</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>igorbernstein2</id>
+      <name>Igor Bernstein</name>
+      <email>igorbernstein@google.com</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <organization>
+    <name>Google LLC</name>
+  </organization>
 
   <properties>
     <maven.version>3.6.1</maven.version>
