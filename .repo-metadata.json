@@ -4,5 +4,6 @@
   "release_level": "alpha",
   "language": "java",
   "repo": "googleapis/java-gcloud-maven-plugin",
-  "repo_short": "java-gcloud-maven-plugin"
+  "repo_short": "java-gcloud-maven-plugin",
+  "distribution_name": "com.google.cloud:google-cloud-gcloud-maven-plugin"
 }
