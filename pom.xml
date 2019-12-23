@@ -38,7 +38,7 @@
   </organization>
 
   <properties>
-    <maven.version>3.6.2</maven.version>
+    <maven.version>3.6.3</maven.version>
   </properties>
 
   <build>
