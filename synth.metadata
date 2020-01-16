@@ -1,5 +1,5 @@
 {
-  "updateTime": "2020-01-07T09:14:13.232784Z",
+  "updateTime": "2020-01-16T09:10:56.065395Z",
   "sources": [
     {
       "template": {
@@ -11,217 +11,46 @@
   ],
   "newFiles": [
     {
-      "path": ".repo-metadata.json"
-    },
-    {
-      "path": "renovate.json"
-    },
-    {
-      "path": "license-checks.xml"
-    },
-    {
-      "path": "synth.py"
-    },
-    {
-      "path": "CHANGELOG.md"
-    },
-    {
-      "path": "codecov.yaml"
-    },
-    {
-      "path": "LICENSE"
-    },
-    {
       "path": "pom.xml"
     },
     {
-      "path": "CODE_OF_CONDUCT.md"
-    },
-    {
-      "path": "synth.metadata"
-    },
-    {
-      "path": "README.md"
-    },
-    {
-      "path": "versions.txt"
-    },
-    {
-      "path": "CONTRIBUTING.md"
+      "path": ".repo-metadata.json"
     },
     {
       "path": "java.header"
     },
     {
-      "path": "src/main/java/com/google/cloud/Component.java"
+      "path": "CONTRIBUTING.md"
     },
     {
-      "path": "src/main/java/com/google/cloud/DownloadComponentsMojo.java"
+      "path": "synth.metadata"
     },
     {
-      "path": ".kokoro/build.bat"
+      "path": "renovate.json"
     },
     {
-      "path": ".kokoro/build.sh"
+      "path": "versions.txt"
     },
     {
-      "path": ".kokoro/dependencies.sh"
+      "path": "synth.py"
     },
     {
-      "path": ".kokoro/common.cfg"
+      "path": "license-checks.xml"
     },
     {
-      "path": ".kokoro/trampoline.sh"
+      "path": "CHANGELOG.md"
     },
     {
-      "path": ".kokoro/coerce_logs.sh"
+      "path": "CODE_OF_CONDUCT.md"
     },
     {
-      "path": ".kokoro/linkage-monitor.sh"
+      "path": "LICENSE"
     },
     {
-      "path": ".kokoro/continuous/dependencies.cfg"
+      "path": "codecov.yaml"
     },
     {
-      "path": ".kokoro/continuous/samples.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/java7.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/java8-osx.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/java8-win.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/propose_release.sh"
-    },
-    {
-      "path": ".kokoro/continuous/lint.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/java11.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/common.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/propose_release.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/java8.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/integration.cfg"
-    },
-    {
-      "path": ".kokoro/release/drop.sh"
-    },
-    {
-      "path": ".kokoro/release/stage.cfg"
-    },
-    {
-      "path": ".kokoro/release/promote.cfg"
-    },
-    {
-      "path": ".kokoro/release/publish_javadoc.cfg"
-    },
-    {
-      "path": ".kokoro/release/bump_snapshot.cfg"
-    },
-    {
-      "path": ".kokoro/release/promote.sh"
-    },
-    {
-      "path": ".kokoro/release/stage.sh"
-    },
-    {
-      "path": ".kokoro/release/snapshot.sh"
-    },
-    {
-      "path": ".kokoro/release/snapshot.cfg"
-    },
-    {
-      "path": ".kokoro/release/common.cfg"
-    },
-    {
-      "path": ".kokoro/release/bump_snapshot.sh"
-    },
-    {
-      "path": ".kokoro/release/common.sh"
-    },
-    {
-      "path": ".kokoro/release/drop.cfg"
-    },
-    {
-      "path": ".kokoro/release/publish_javadoc.sh"
-    },
-    {
-      "path": ".kokoro/presubmit/dependencies.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/samples.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/java7.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/java8-osx.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/linkage-monitor.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/java8-win.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/lint.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/java11.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/common.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/clirr.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/java8.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/integration.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/dependencies.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/samples.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/java7.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/java8-osx.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/java8-win.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/lint.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/java11.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/common.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/java8.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/integration.cfg"
+      "path": "README.md"
     },
     {
       "path": ".github/release-please.yml"
@@ -230,304 +59,184 @@
       "path": ".github/PULL_REQUEST_TEMPLATE.md"
     },
     {
-      "path": ".github/ISSUE_TEMPLATE/bug_report.md"
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/support_request.md"
     },
     {
-      "path": ".github/ISSUE_TEMPLATE/feature_request.md"
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md"
     },
     {
-      "path": "__pycache__/synth.cpython-36.pyc"
+      "path": ".kokoro/build.sh"
     },
     {
-      "path": ".git/index"
+      "path": ".kokoro/common.cfg"
     },
     {
-      "path": ".git/packed-refs"
+      "path": ".kokoro/build.bat"
     },
     {
-      "path": ".git/HEAD"
+      "path": ".kokoro/linkage-monitor.sh"
     },
     {
-      "path": ".git/description"
+      "path": ".kokoro/coerce_logs.sh"
     },
     {
-      "path": ".git/config"
+      "path": ".kokoro/dependencies.sh"
     },
     {
-      "path": ".git/shallow"
+      "path": ".kokoro/trampoline.sh"
     },
     {
-      "path": ".git/objects/00/95145423e7544077f3d17734a4cf9ca73a88fd"
+      "path": ".kokoro/continuous/samples.cfg"
     },
     {
-      "path": ".git/objects/00/6a67a5f1da34b9f69e374b7859d99305cf103f"
+      "path": ".kokoro/continuous/java8.cfg"
     },
     {
-      "path": ".git/objects/30/a9bb45bf83f74bda80d4b463d62d7075a6e7a7"
+      "path": ".kokoro/continuous/integration.cfg"
     },
     {
-      "path": ".git/objects/7f/c3f286f86bb23ebc1e3ed3bcfeca6dd9dab252"
+      "path": ".kokoro/continuous/java11.cfg"
     },
     {
-      "path": ".git/objects/d6/45695673349e3947e8e5ae42332d0ac3164cd7"
+      "path": ".kokoro/continuous/propose_release.cfg"
     },
     {
-      "path": ".git/objects/ce/30d1cff2351b922eef0250993bb6590e4508fc"
+      "path": ".kokoro/continuous/common.cfg"
     },
     {
-      "path": ".git/objects/fa/2db68166cc0f70c476ee522d2c463fe973854c"
+      "path": ".kokoro/continuous/propose_release.sh"
     },
     {
-      "path": ".git/objects/87/d57640c4b51e107b407bba6be82f81f37c037e"
+      "path": ".kokoro/continuous/java7.cfg"
     },
     {
-      "path": ".git/objects/06/043ee210938c8246fe6ca72ed72535d7cb295d"
+      "path": ".kokoro/continuous/lint.cfg"
     },
     {
-      "path": ".git/objects/86/da81ec8812ccb6364fdeacb0b3ffbdab485838"
+      "path": ".kokoro/continuous/java8-osx.cfg"
     },
     {
-      "path": ".git/objects/fb/1c699641f924f9f80913bd916b611d12587e18"
+      "path": ".kokoro/continuous/dependencies.cfg"
     },
     {
-      "path": ".git/objects/8e/6f84d3137b05dbb9a47146409b03965ec47ced"
+      "path": ".kokoro/continuous/java8-win.cfg"
     },
     {
-      "path": ".git/objects/70/9f2b4c73db4ed19af9dac308f9bd1d7f94f046"
+      "path": ".kokoro/nightly/samples.cfg"
     },
     {
-      "path": ".git/objects/75/4e30c68a00fccdb4f58f2d331f8709da8bf0ce"
+      "path": ".kokoro/nightly/java8.cfg"
     },
     {
-      "path": ".git/objects/f2/b3b8bda9c2e7b4451c55f9cdf2decd7e359eea"
+      "path": ".kokoro/nightly/integration.cfg"
     },
     {
-      "path": ".git/objects/6b/207dd03c08b4f70fbb311381253a6bff48f0a4"
+      "path": ".kokoro/nightly/java11.cfg"
     },
     {
-      "path": ".git/objects/6b/2238bb75e0a238278b3ce8c7ce3fe76b0ab7a4"
+      "path": ".kokoro/nightly/common.cfg"
     },
     {
-      "path": ".git/objects/1f/a95fa537a3e7bb9f9cbdbf0120cf0894845973"
+      "path": ".kokoro/nightly/java7.cfg"
     },
     {
-      "path": ".git/objects/79/b47ab1c1282c4b74f4ca58cf32019a198fa58c"
+      "path": ".kokoro/nightly/lint.cfg"
     },
     {
-      "path": ".git/objects/94/22e47fd9a5cf72cc07780115e8e0932734b149"
+      "path": ".kokoro/nightly/java8-osx.cfg"
     },
     {
-      "path": ".git/objects/cb/481089c19420bd946a5cc08354cfc2d26547e0"
+      "path": ".kokoro/nightly/dependencies.cfg"
     },
     {
-      "path": ".git/objects/cb/24f44eea3b43ebbbbfaec7fd663bf7c762413a"
+      "path": ".kokoro/nightly/java8-win.cfg"
     },
     {
-      "path": ".git/objects/02/4f826393f4ac629149374cb2661157e738d7b9"
+      "path": ".kokoro/release/publish_javadoc.cfg"
     },
     {
-      "path": ".git/objects/02/2c67dc643321b2ddeb8b17ace4201822aae8c9"
+      "path": ".kokoro/release/common.sh"
     },
     {
-      "path": ".git/objects/ba/17ce01466baca99d6ec9aa01c0fdbb0aa2035f"
+      "path": ".kokoro/release/promote.sh"
     },
     {
-      "path": ".git/objects/99/5869032125fb2e0d6830a2898ea07e0c061499"
+      "path": ".kokoro/release/common.cfg"
     },
     {
-      "path": ".git/objects/3c/482cbc55f126bf64b230f51c31b47ee7444eca"
+      "path": ".kokoro/release/publish_javadoc.sh"
     },
     {
-      "path": ".git/objects/c6/1167c23382dcee8389f42d8413fbb8855cfbde"
+      "path": ".kokoro/release/drop.sh"
     },
     {
-      "path": ".git/objects/eb/b283b996c773d82221a57708fedfb61e1d037d"
+      "path": ".kokoro/release/stage.sh"
     },
     {
-      "path": ".git/objects/eb/f4ec11904eecc7ca3e678009d763a2a1873514"
+      "path": ".kokoro/release/promote.cfg"
     },
     {
-      "path": ".git/objects/eb/bb59e5310f80a2b1b9ec6dba27b4a871d7ad77"
+      "path": ".kokoro/release/snapshot.cfg"
     },
     {
-      "path": ".git/objects/09/124262afbda4d336fcd5b9dbf8aad928ecb860"
+      "path": ".kokoro/release/bump_snapshot.cfg"
     },
     {
-      "path": ".git/objects/09/8168a7373cddb2bbe4427ae1c909800f18b590"
+      "path": ".kokoro/release/drop.cfg"
     },
     {
-      "path": ".git/objects/d0/14232c57bf970000b8882e41ed942f9c44a789"
+      "path": ".kokoro/release/bump_snapshot.sh"
     },
     {
-      "path": ".git/objects/57/24ea9478d717c05010eae9ac2dbd62fc0d8324"
+      "path": ".kokoro/release/stage.cfg"
     },
     {
-      "path": ".git/objects/49/76927611612c079f5204b69738f14d629ba710"
+      "path": ".kokoro/release/snapshot.sh"
     },
     {
-      "path": ".git/objects/40/2cd7ae8b16523b78e1b94be05921631f16a3c4"
+      "path": ".kokoro/presubmit/samples.cfg"
     },
     {
-      "path": ".git/objects/3b/017fc80f04b84c231cb792308d1ceae48375de"
+      "path": ".kokoro/presubmit/java8.cfg"
     },
     {
-      "path": ".git/objects/50/f437777b262e608e06295cf9ca5ce84490f6a9"
+      "path": ".kokoro/presubmit/integration.cfg"
     },
     {
-      "path": ".git/objects/12/f2a074004a61cfe4426b6e641cad11b25019e1"
+      "path": ".kokoro/presubmit/java11.cfg"
     },
     {
-      "path": ".git/objects/12/c38b1d0d87d016583ab89dd485676393660461"
+      "path": ".kokoro/presubmit/linkage-monitor.cfg"
     },
     {
-      "path": ".git/objects/1a/75b153e60fbefb0f2d1fe886f48c663791c432"
+      "path": ".kokoro/presubmit/common.cfg"
     },
     {
-      "path": ".git/objects/cf/abe682047675b2739644b860ad733ed9adefee"
+      "path": ".kokoro/presubmit/java7.cfg"
     },
     {
-      "path": ".git/objects/6d/323c8ae768078404d0c427bed6c610aac336ae"
+      "path": ".kokoro/presubmit/lint.cfg"
     },
     {
-      "path": ".git/objects/f5/71c057442c27e3291806493f24e3904d7e7e94"
+      "path": ".kokoro/presubmit/java8-osx.cfg"
     },
     {
-      "path": ".git/objects/3a/568af3c687b8ca3972b94cce32f22a4a8cf6a9"
+      "path": ".kokoro/presubmit/dependencies.cfg"
     },
     {
-      "path": ".git/objects/3a/9b503aa24fe32edbe535ea2c738bd3acf437b4"
+      "path": ".kokoro/presubmit/clirr.cfg"
     },
     {
-      "path": ".git/objects/5c/f7ba49e6bb7a1805c5b6f3d04461eaae6c0b58"
+      "path": ".kokoro/presubmit/java8-win.cfg"
     },
     {
-      "path": ".git/objects/5c/4551efa2c0bf28182078ef9843c736f35f8a88"
+      "path": "src/main/java/com/google/cloud/Component.java"
     },
     {
-      "path": ".git/objects/e9/0bdf7be0a6e5c4afda552bad57cfc7bcde3363"
-    },
-    {
-      "path": ".git/objects/ec/572442e2e79abe9f00dc8214a08ac5302d90fd"
-    },
-    {
-      "path": ".git/objects/6e/3f65999b3da8f4bfcd1b1741799958953be862"
-    },
-    {
-      "path": ".git/objects/14/1f90c13c56d6ab627e11aa861f2636bc1f0ed2"
-    },
-    {
-      "path": ".git/objects/69/408746789547518dc32c46fe834193c4b69315"
-    },
-    {
-      "path": ".git/objects/69/861a293c72d3ea452f45d1829727aedb81a03c"
-    },
-    {
-      "path": ".git/objects/e5/0b4ea85f39bd266ff1c563d9597fd23b176bab"
-    },
-    {
-      "path": ".git/objects/67/6659962a6c7a6334c5069b2adc9c88a05f73b5"
-    },
-    {
-      "path": ".git/objects/c2/1a0d2c21ed3f03deda3158b01fd1ceffc0a338"
-    },
-    {
-      "path": ".git/objects/ef/3a6d11b7b081f3b4b7d88fb763478e3a4cc965"
-    },
-    {
-      "path": ".git/objects/ef/cc36932baf3af91a42aa158a4deca963a712b4"
-    },
-    {
-      "path": ".git/objects/95/6d0260e1f1da9bae9841048f66bbf2f984eda7"
-    },
-    {
-      "path": ".git/objects/ea/72b7dd05512b195093f3edd0a8090c360c8053"
-    },
-    {
-      "path": ".git/objects/65/97fced808e81942a9630c70edf4729de93e57c"
-    },
-    {
-      "path": ".git/objects/dc/e2c8450921a822a44e69d9cd82992b1f91fc65"
-    },
-    {
-      "path": ".git/objects/dc/2936ef76a81a2984b8461d4d0d09ce533a3dce"
-    },
-    {
-      "path": ".git/objects/34/9092727d081ab4eaad7acc9f399f84cf8746d2"
-    },
-    {
-      "path": ".git/objects/63/f06b3c28fc011dd1b66e2421f77a03a7a9091a"
-    },
-    {
-      "path": ".git/objects/0b/d0ee0620f9f1b6de097d93928204fd3af6aa16"
-    },
-    {
-      "path": ".git/objects/38/5aed54e696a2b76c4e3cf9a0fed715d1ab8c81"
-    },
-    {
-      "path": ".git/objects/bf/75e62fa0fee242d9d9f6dbaf52c61276bee2f6"
-    },
-    {
-      "path": ".git/objects/73/b97c28fc60ded02af977543c42de94a04cb978"
-    },
-    {
-      "path": ".git/refs/remotes/origin/HEAD"
-    },
-    {
-      "path": ".git/refs/heads/autosynth"
-    },
-    {
-      "path": ".git/refs/heads/master"
-    },
-    {
-      "path": ".git/hooks/pre-applypatch.sample"
-    },
-    {
-      "path": ".git/hooks/pre-commit.sample"
-    },
-    {
-      "path": ".git/hooks/fsmonitor-watchman.sample"
-    },
-    {
-      "path": ".git/hooks/pre-rebase.sample"
-    },
-    {
-      "path": ".git/hooks/update.sample"
-    },
-    {
-      "path": ".git/hooks/pre-push.sample"
-    },
-    {
-      "path": ".git/hooks/applypatch-msg.sample"
-    },
-    {
-      "path": ".git/hooks/prepare-commit-msg.sample"
-    },
-    {
-      "path": ".git/hooks/commit-msg.sample"
-    },
-    {
-      "path": ".git/hooks/post-update.sample"
-    },
-    {
-      "path": ".git/hooks/pre-receive.sample"
-    },
-    {
-      "path": ".git/info/exclude"
-    },
-    {
-      "path": ".git/logs/HEAD"
-    },
-    {
-      "path": ".git/logs/refs/remotes/origin/HEAD"
-    },
-    {
-      "path": ".git/logs/refs/heads/autosynth"
-    },
-    {
-      "path": ".git/logs/refs/heads/master"
+      "path": "src/main/java/com/google/cloud/DownloadComponentsMojo.java"
     }
   ]
 }
