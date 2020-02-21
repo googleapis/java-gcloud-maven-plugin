@@ -1,11 +1,25 @@
 {
-  "updateTime": "2020-02-01T09:13:25.011682Z",
+  "updateTime": "2020-02-21T23:10:40.587280Z",
   "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/java-gcloud-maven-plugin.git",
+        "sha": "6cdd549e615363a909e56a4cf96321fb10127902"
+      }
+    },
+    {
+      "git": {
+        "name": "synthtool",
+        "remote": "rpc://devrel/cloud/libraries/tools/autosynth",
+        "sha": "706a38c26db42299845396cdae55db635c38794a"
+      }
+    },
     {
       "template": {
         "name": "java_library",
         "origin": "synthtool.gcp",
-        "version": "2019.10.17"
+        "version": "2020.2.4"
       }
     }
   ]
