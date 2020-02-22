@@ -1,11 +1,11 @@
 {
-  "updateTime": "2020-02-21T23:10:40.587280Z",
+  "updateTime": "2020-02-22T10:15:58.076482Z",
   "sources": [
     {
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-gcloud-maven-plugin.git",
-        "sha": "6cdd549e615363a909e56a4cf96321fb10127902"
+        "sha": "de36bf35dd338f8bc1b320ac794c0341399154d3"
       }
     },
     {
