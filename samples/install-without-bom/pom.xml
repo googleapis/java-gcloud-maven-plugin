@@ -31,7 +31,7 @@
       <artifactId>google-cloud-gcloud-maven-plugin</artifactId>
       <version></version>
     </dependency>
-    <!-- [END gcloud-maven-plugin_install_with_bom] -->
+    <!-- [END gcloud-maven-plugin_install_without_bom] -->
 
     <dependency>
       <groupId>junit</groupId>
