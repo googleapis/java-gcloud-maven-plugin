@@ -4,14 +4,14 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-gcloud-maven-plugin.git",
-        "sha": "602f08073b8b298256c07c3d43814e9c1d32d351"
+        "sha": "3df4bc245884c028f5b16f7a6104a3662540b767"
       }
     },
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "8b65daa222d193b689279162781baf0aa1f0ffd2"
+        "sha": "cac9eef310652bf138dd76b716e4986e757d62ac"
       }
     }
   ]
