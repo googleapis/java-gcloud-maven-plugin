@@ -113,7 +113,10 @@ public class DownloadComponentsMojo extends AbstractMojo {
     }
 
     // Ensure that the output directory exists
-    destinationDir.mkdirs();
+    if (!destinationDir.mkdirs()) {
+      getLog()
+          .info("Failed to create destination directory. Perhaps the directory already exists?");
+    }
 
     // Update the cached manifest
     try {
