@@ -103,8 +103,8 @@ bash .kokoro/coerce_logs.sh
 
 if [[ "${ENABLE_BUILD_COP}" == "true" ]]
 then
-    chmod +x ${KOKORO_GFILE_DIR}/linux_amd64/buildcop
-    ${KOKORO_GFILE_DIR}/linux_amd64/buildcop -repo=googleapis/java-gcloud-maven-plugin
+    chmod +x ${KOKORO_GFILE_DIR}/linux_amd64/flakybot
+    ${KOKORO_GFILE_DIR}/linux_amd64/flakybot -repo=googleapis/java-gcloud-maven-plugin
 fi
 
 echo "exiting with ${RETURN_CODE}"
