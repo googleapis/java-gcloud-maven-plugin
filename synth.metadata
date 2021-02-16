@@ -4,14 +4,14 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-gcloud-maven-plugin.git",
-        "sha": "05613edae83f7cda73676e83bb6c6080a8b6199e"
+        "sha": "1d07e5f19836924261766c8a6991bdb5fde8c5b6"
       }
     },
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "019c7168faa0e56619f792693a8acdb30d6de19b"
+        "sha": "2414b817065726eae0bc525346c7e874f969369d"
       }
     }
   ],
@@ -21,10 +21,15 @@
     ".github/ISSUE_TEMPLATE/feature_request.md",
     ".github/ISSUE_TEMPLATE/support_request.md",
     ".github/PULL_REQUEST_TEMPLATE.md",
+    ".github/blunderbuss.yml",
+    ".github/generated-files-bot.yml",
+    ".github/readme/synth.py",
     ".github/release-please.yml",
+    ".github/snippet-bot.yml",
     ".github/trusted-contribution.yml",
+    ".github/workflows/approve-readme.yaml",
+    ".github/workflows/auto-release.yaml",
     ".github/workflows/ci.yaml",
-    ".github/workflows/samples.yaml",
     ".kokoro/build.bat",
     ".kokoro/build.sh",
     ".kokoro/coerce_logs.sh",
@@ -32,8 +37,8 @@
     ".kokoro/common.sh",
     ".kokoro/continuous/common.cfg",
     ".kokoro/continuous/java8.cfg",
+    ".kokoro/continuous/readme.cfg",
     ".kokoro/dependencies.sh",
-    ".kokoro/linkage-monitor.sh",
     ".kokoro/nightly/common.cfg",
     ".kokoro/nightly/integration.cfg",
     ".kokoro/nightly/java11.cfg",
@@ -55,6 +60,7 @@
     ".kokoro/presubmit/linkage-monitor.cfg",
     ".kokoro/presubmit/lint.cfg",
     ".kokoro/presubmit/samples.cfg",
+    ".kokoro/readme.sh",
     ".kokoro/release/bump_snapshot.cfg",
     ".kokoro/release/common.cfg",
     ".kokoro/release/common.sh",
@@ -64,6 +70,8 @@
     ".kokoro/release/promote.sh",
     ".kokoro/release/publish_javadoc.cfg",
     ".kokoro/release/publish_javadoc.sh",
+    ".kokoro/release/publish_javadoc11.cfg",
+    ".kokoro/release/publish_javadoc11.sh",
     ".kokoro/release/snapshot.cfg",
     ".kokoro/release/snapshot.sh",
     ".kokoro/release/stage.cfg",
@@ -75,10 +83,6 @@
     "codecov.yaml",
     "java.header",
     "license-checks.xml",
-    "renovate.json",
-    "samples/install-without-bom/pom.xml",
-    "samples/pom.xml",
-    "samples/snapshot/pom.xml",
-    "samples/snippets/pom.xml"
+    "renovate.json"
   ]
 }
