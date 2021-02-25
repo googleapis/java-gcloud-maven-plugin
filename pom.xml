@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-gcloud-maven-plugin</artifactId>
-  <version>0.1.1-SNAPSHOT</version><!-- {x-version-update:google-cloud-gcloud-maven-plugin:current} -->
+  <version>0.1.1</version><!-- {x-version-update:google-cloud-gcloud-maven-plugin:current} -->
   <name>google-cloud-gcloud-maven-plugin</name>
   <description>Experimental Maven plugin to interact with the Google Cloud SDK (https://cloud.google.com/sdk/)</description>
   <packaging>maven-plugin</packaging>
