@@ -66,6 +66,10 @@
         "^com.fasterxml.jackson.core"
       ],
       "groupName": "jackson dependencies"
+    },
+    {
+      "packagePatterns": ["^commons-io"],
+      "enabled": false
     }
   ],
   "semanticCommits": true,
