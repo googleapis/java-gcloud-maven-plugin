@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.2](https://www.github.com/googleapis/java-gcloud-maven-plugin/compare/v0.1.1...v0.1.2) (2021-02-26)
+
+
+### Dependencies
+
+* pin commons-io to 2.6 for jdk 7 compatibility ([#110](https://www.github.com/googleapis/java-gcloud-maven-plugin/issues/110)) ([aa63ef2](https://www.github.com/googleapis/java-gcloud-maven-plugin/commit/aa63ef257d653edf5e480803efc8fcb1282afbb6))
+
 ### [0.1.1](https://www.github.com/googleapis/java-gcloud-maven-plugin/compare/v0.1.0...v0.1.1) (2021-02-25)
 
 
