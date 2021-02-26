@@ -15,6 +15,7 @@
  */
 package com.google.cloud;
 
+import java.nio.file.Files;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -34,7 +35,6 @@ import java.io.OutputStream;
 import java.io.Writer;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.file.Files;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
@@ -53,7 +53,6 @@ import org.apache.commons.compress.archivers.tar.TarArchiveInputStream;
 import org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream;
 import org.apache.commons.compress.utils.IOUtils;
 import org.apache.commons.compress.utils.Lists;
-import org.apache.commons.io.FileUtils;
 import org.apache.maven.execution.MavenSession;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -242,15 +241,14 @@ public class DownloadComponentsMojo extends AbstractMojo {
     @SuppressWarnings("unused")
     boolean ignored = localCache.delete();
 
-    FileUtils.moveFile(tempFile, localCache);
+    Files.move(tempFile.toPath(), localCache.toPath());
   }
 
   /** Parse the locally cached manifest and extract the relevant components. */
   private List<Component> parseManifest() throws IOException {
-    JsonParser parser = new JsonParser();
     JsonElement json;
     try (FileReader reader = new FileReader(getManifestCache())) {
-      json = parser.parse(reader);
+      json = JsonParser.parseReader(reader);
     }
 
     JsonArray jsonComponents = json.getAsJsonObject().get("components").getAsJsonArray();
@@ -274,10 +272,9 @@ public class DownloadComponentsMojo extends AbstractMojo {
     JsonElement json = new JsonObject();
 
     if (getChecksumFile().exists()) {
-      JsonParser parser = new JsonParser();
 
       try (FileReader reader = new FileReader(getChecksumFile())) {
-        json = parser.parse(reader);
+        json = JsonParser.parseReader(reader);
       }
     }
 
@@ -366,9 +363,19 @@ public class DownloadComponentsMojo extends AbstractMojo {
 
     // Move it into place
     File localPath = getComponentPath(component);
-    FileUtils.deleteDirectory(localPath);
-    FileUtils.moveDirectory(tmpPath, localPath);
+    deleteRecursively(localPath);
+    Files.move(tmpPath.toPath(), localPath.toPath());
   }
+  
+  private static void deleteRecursively(File directory) {
+    File[] contents = directory.listFiles();
+    if (contents != null) {
+        for (File file : contents) {
+          deleteRecursively(file);
+        }
+    }
+    directory.delete();
+}
 
   private static String byteArrayToHex(byte[] a) {
     StringBuilder sb = new StringBuilder(a.length * 2);
@@ -386,9 +393,8 @@ public class DownloadComponentsMojo extends AbstractMojo {
     JsonObject results = new JsonObject();
 
     try {
-      JsonParser parser = new JsonParser();
       try (FileReader reader = new FileReader(getChecksumFile())) {
-        results = parser.parse(reader).getAsJsonObject();
+        results = JsonParser.parseReader(reader).getAsJsonObject();
       }
     } catch (FileNotFoundException e) {
       // ignored
