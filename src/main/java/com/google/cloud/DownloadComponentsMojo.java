@@ -15,6 +15,12 @@
  */
 package com.google.cloud;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.google.gson.JsonPrimitive;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -52,12 +58,6 @@ import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
-import com.google.gson.Gson;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import com.google.gson.JsonPrimitive;
 
 /**
  * Goal that downloads gcloud components and embeds them as resources in a jar. This is mainly
@@ -366,16 +366,16 @@ public class DownloadComponentsMojo extends AbstractMojo {
     deleteRecursively(localPath);
     Files.move(tmpPath.toPath(), localPath.toPath());
   }
-  
+
   private static void deleteRecursively(File directory) {
     File[] contents = directory.listFiles();
     if (contents != null) {
-        for (File file : contents) {
-          deleteRecursively(file);
-        }
+      for (File file : contents) {
+        deleteRecursively(file);
+      }
     }
     directory.delete();
-}
+  }
 
   private static String byteArrayToHex(byte[] a) {
     StringBuilder sb = new StringBuilder(a.length * 2);
