@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-gcloud-maven-plugin.git",
-        "sha": "4cf51852779c55b4dd9f5e636b4227c0ab053ae1"
+        "sha": "0cae6e387f10493fc7bad88b1a6b5aa57076b5c0"
       }
     },
     {
