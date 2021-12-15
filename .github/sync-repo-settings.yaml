@@ -14,8 +14,8 @@ mergeCommitAllowed: false
 # Rules for master branch protection
 branchProtectionRules:
 # Identifies the protection rule pattern. Name of the branch to be protected.
-# Defaults to `master`
-- pattern: master
+# Defaults to `main`
+- pattern: main
   # Can admins overwrite branch protection.
   # Defaults to `true`
   isAdminEnforced: true
