@@ -354,6 +354,11 @@ public class DownloadComponentsMojo extends AbstractMojo {
             getLog().warn("Failed to expand the directory " + dest);
           }
         } else {
+          // create intermediate dirs
+          if (!dest.getParentFile().exists() && !dest.getParentFile().mkdirs()) {
+            getLog().warn("Failed to create intermediate directories: " + dest);
+          }
+
           try (OutputStream outputFileStream = new FileOutputStream(dest)) {
             IOUtils.copy(stream, outputFileStream);
           }
