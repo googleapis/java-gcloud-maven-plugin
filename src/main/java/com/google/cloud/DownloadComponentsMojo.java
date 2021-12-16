@@ -35,6 +35,7 @@ import java.io.Writer;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
@@ -53,6 +54,7 @@ import org.apache.commons.compress.archivers.tar.TarArchiveInputStream;
 import org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream;
 import org.apache.commons.compress.utils.IOUtils;
 import org.apache.commons.compress.utils.Lists;
+import org.apache.commons.io.FileUtils;
 import org.apache.maven.execution.MavenSession;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -238,10 +240,7 @@ public class DownloadComponentsMojo extends AbstractMojo {
       }
     }
 
-    @SuppressWarnings("unused")
-    boolean ignored = localCache.delete();
-
-    Files.move(tempFile.toPath(), localCache.toPath());
+    Files.move(tempFile.toPath(), localCache.toPath(), StandardCopyOption.REPLACE_EXISTING);
   }
 
   /** Parse the locally cached manifest and extract the relevant components. */
@@ -369,7 +368,7 @@ public class DownloadComponentsMojo extends AbstractMojo {
     // Move it into place
     File localPath = getComponentPath(component);
     deleteRecursively(localPath);
-    Files.move(tmpPath.toPath(), localPath.toPath());
+    FileUtils.moveDirectory(tmpPath, localPath);
   }
 
   private static void deleteRecursively(File directory) {
