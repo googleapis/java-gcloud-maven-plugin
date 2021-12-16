@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.4](https://www.github.com/googleapis/java-gcloud-maven-plugin/compare/v0.1.3...v0.1.4) (2021-12-16)
+
+
+### Bug Fixes
+
+* tmp file moving across filesystems ([#148](https://www.github.com/googleapis/java-gcloud-maven-plugin/issues/148)) ([89fbce3](https://www.github.com/googleapis/java-gcloud-maven-plugin/commit/89fbce3218cfb9304d416f9ba6e45db147ac56c0))
+
 ### [0.1.3](https://www.github.com/googleapis/java-gcloud-maven-plugin/compare/v0.1.2...v0.1.3) (2021-12-15)
 
 
