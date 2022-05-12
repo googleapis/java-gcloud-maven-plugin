@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.1.5](https://github.com/googleapis/java-gcloud-maven-plugin/compare/v0.1.4...v0.1.5) (2022-05-12)
+
+
+### Dependencies
+
+* update dependency com.google.code.gson:gson to v2.9.0 ([#167](https://github.com/googleapis/java-gcloud-maven-plugin/issues/167)) ([0843591](https://github.com/googleapis/java-gcloud-maven-plugin/commit/0843591ea675dc16db9c72275ebd1fb8c5d97b4d))
+* update dependency commons-io:commons-io to v2.11.0 ([#153](https://github.com/googleapis/java-gcloud-maven-plugin/issues/153)) ([b2cb6f7](https://github.com/googleapis/java-gcloud-maven-plugin/commit/b2cb6f714048517fb7ea2fd6f1025b47400081e3))
+
 ### [0.1.4](https://www.github.com/googleapis/java-gcloud-maven-plugin/compare/v0.1.3...v0.1.4) (2021-12-16)
 
 
