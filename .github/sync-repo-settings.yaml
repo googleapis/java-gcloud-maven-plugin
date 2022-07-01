@@ -29,12 +29,8 @@ branchProtectionRules:
   requiresStrictStatusChecks: false
   # List of required status check contexts that must pass for commits to be accepted to matching branches.
   requiredStatusCheckContexts:
-    - "dependencies (8)"
     - "dependencies (11)"
-    - "linkage-monitor"
     - "lint"
-    - "clirr"
-    - "units (7)"
     - "units (8)"
     - "units (11)"
     - "Kokoro - Test: Integration"
