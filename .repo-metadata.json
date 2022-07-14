@@ -5,5 +5,6 @@
   "language": "java",
   "repo": "googleapis/java-gcloud-maven-plugin",
   "repo_short": "java-gcloud-maven-plugin",
-  "distribution_name": "com.google.cloud:google-cloud-gcloud-maven-plugin"
+  "distribution_name": "com.google.cloud:google-cloud-gcloud-maven-plugin",
+  "api_shortname": "gcloud-maven-plugin"
 }
